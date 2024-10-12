@@ -15,9 +15,8 @@ public class Flower {
     @Getter
     private FlowerType flowerType;
 
-    public String getColor() {
-        return color.toString();
-    }
+    private static final double ROSE_PRICE = 100;
+    private static final double ROSE_SEPAL_LENGTH = 10;
 
     public Flower() {
         this.sepalLength = 0;
@@ -34,15 +33,20 @@ public class Flower {
         this.flowerType = flowerType;
     }
 
-    public static Flower Rose() {
+    public String getColor() {
+        return color.toString();
+    }
+
+    public static Flower rose() {
         Flower flower = new Flower();
-        flower.sepalLength = 10;
+        flower.sepalLength = ROSE_SEPAL_LENGTH;
         flower.color = FlowerColor.RED;
-        flower.price = 100;
+        flower.price = ROSE_PRICE;
         flower.flowerType = FlowerType.ROSE;
         return flower;
     }
-    public static Flower Rose(double sepalLength, FlowerColor color, 
+
+    public static Flower rose(double sepalLength, FlowerColor color, 
     double price) {
         Flower flower = new Flower();
         flower.sepalLength = sepalLength;
