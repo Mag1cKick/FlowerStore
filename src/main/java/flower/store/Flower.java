@@ -15,8 +15,8 @@ public class Flower {
     @Getter
     private FlowerType flowerType;
 
-    private static final double ROSE_PRICE = 100;
     private static final double ROSE_SEPAL_LENGTH = 10;
+    private static final double ROSE_PRICE = 100;
 
     public Flower() {
         this.sepalLength = 0;

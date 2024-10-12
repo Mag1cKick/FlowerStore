@@ -15,7 +15,7 @@ public class Store {
         for (FlowerBucket bucket : flowerBuckets) {
             for (FlowerPack flowerpack : bucket.getFlowerPacks()) {
                 if (flowerpack.getFlower().getFlowerType()
-				== flowerType) {
+                == flowerType) {
                     res.add(flowerpack);
                 }
             }
