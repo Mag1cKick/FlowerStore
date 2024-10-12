@@ -7,6 +7,8 @@ import lombok.Setter;
 
 @Setter
 public class Flower {
+    private static final double ROSE_SEPAL_LENGTH = 10;
+    private static final double ROSE_PRICE = 100;
     @Getter
     private double sepalLength;
     private FlowerColor color;
@@ -14,9 +16,6 @@ public class Flower {
     private double price;
     @Getter
     private FlowerType flowerType;
-
-    private static final double ROSE_SEPAL_LENGTH = 10;
-    private static final double ROSE_PRICE = 100;
 
     public Flower() {
         this.sepalLength = 0;
